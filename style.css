@@ -1,0 +1,147 @@
+/* Reset styles for all elements */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive;
+}
+
+/* Set the height of the body to 100% of the viewport height and apply a gradient background */
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #602ed6, #a304ff);
+}
+
+/* Set the base font size for the document */
+
+html {
+  font-size: 16px;
+}
+
+/* Center the wrapper element horizontally and vertically */
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+/* Set the dimensions and layout properties for the game board container */
+
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+/* Style for the game buttons */
+
+.button-option {
+  background: transparent;
+  backdrop-filter: blur(50px);
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 20px;
+  font-size: 12vmin;
+  color: #f7f8f7;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s;
+}
+
+/* Style when hovering over game buttons */
+
+.button-option:hover {
+  color: #231850;
+  background: #1dffd2;
+  box-shadow: 0 20px 50px rgba(58, 248, 197, 0.5);
+}
+
+/* Style for the restart button */
+
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+
+/* Style when hovering over the restart button */
+
+#restart:hover {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0a0027;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+  transition: color 0.3s;
+  box-shadow: 0 20px 50px rgba(58, 248, 197, 0.5);
+}
+
+/* Style for the popup container */
+
+.popup {
+  height: 100vh;
+  background: linear-gradient(135deg, #602ed6, #a304ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+/* Style for the new game button inside the popup */
+
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+
+/* Style when hovering over the new game button */
+
+#new-game:hover {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.2em;
+  border: none;
+  box-shadow: 0 20px 50px rgba(58, 248, 197, 0.5);
+}
+
+/* Style for the message text inside the popup */
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Hide the popup by default */
+
+.popup.hide {
+  display: none;
+}
